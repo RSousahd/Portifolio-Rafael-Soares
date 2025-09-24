@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Rafael SS</title>
+</head>
+<body style="margin:0; font-family:sans-serif; line-height:1.6;">
+
+  <!-- Cabeçalho -->
+  <header style="background:#222; color:#fff; text-align:center; padding:30px;">
+    <h1>👋 Eu sou Rafael Soares</h1>
+    <p>Desenvolvedor Web & Criador de Soluções</p>
+    <nav>
+      <a href="#sobre" style="color:#25D366; margin:0 10px; text-decoration:none;">Sobre</a>
+      <a href="#projetos" style="color:#25D366; margin:0 10px; text-decoration:none;">Projetos</a>
+      <a href="#contato" style="color:#25D366; margin:0 10px; text-decoration:none;">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Sobre -->
+  <section id="sobre" style="padding:40px; text-align:center; background:#f4f4f4;">
+    <h2>🙋 Sobre Mim</h2>
+    <p>Apaixonado por tecnologia e desenvolvimento web. Busco criar experiências simples, funcionais e memoráveis.</p>
+    <p><strong>Habilidades:</strong> HTML • CSS • PHP • Construção Civil Digital</p>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" style="padding:40px; text-align:center;">
+    <h2>🚀 Projetos</h2>
+    <p><strong>🌟 Site Pessoal:</strong> Experiência clara para usuários, com foco em <em>construção civil, reformas e ampliação</em>.</p>
+    <p><strong>🌟 Projeto 2:</strong> Solução prática para clientes, conectando inovação e resultado.</p>
+  </section>
+
+  <!-- Contato (WhatsApp) -->
+  <section id="contato" style="padding:40px; text-align:center; background:#f4f4f4;">
+    <h2>📩 Fale Comigo</h2>
+    <form onsubmit="this.action='https://wa.me/5562985558320?text=Olá,%20sou%20'+this.nome.value+'%20(%20'+this.email.value+'%20)%20.%20Data:%20'+this.data.value+'%20Mensagem:%20'+this.mensagem.value; return true;" method="get" style="max-width:400px;margin:auto;text-align:left;">
+      
+      <input type="text" name="nome" placeholder="Seu nome" style="width:100%;padding:10px;margin:8px 0;">
+      <input type="email" name="email" placeholder="Seu e-mail" style="width:100%;padding:10px;margin:8px 0;">
+      <input type="date" name="data" style="width:100%;padding:10px;margin:8px 0;">
+      <textarea name="mensagem" placeholder="Sua mensagem" style="width:100%;padding:10px;margin:8px 0;"></textarea>
+      <input type="submit" value="Enviar no WhatsApp" style="width:100%;background:#25D366;color:#fff;border:none;padding:12px;cursor:pointer;border-radius:5px;">
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer style="background:#222; color:#fff; text-align:center; padding:20px;">
+    © 2025 - Criado por Rafael SS
+  </footer>
+
+</body>
+</html>
