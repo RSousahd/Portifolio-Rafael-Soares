@@ -286,53 +286,124 @@
                                     Iniciar conversa no WhatsApp
                                 </a>
                             </div>
+                            <!-- Cards de Plataformas / Anúncios -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+
+    <!-- Card 1 -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 text-center">
+        <div class="flex justify-center mb-4">
+            <div class="bg-blue-600 text-white p-4 rounded-full">
+                <i data-feather="trending-up" class="w-6 h-6"></i>
+            </div>
+        </div>
+        <h4 class="text-xl font-bold text-gray-800 mb-2">Google</h4>
+        <p class="text-gray-600 text-sm">Anúncios profissionais no Google Ads para alcançar mais clientes.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 text-center">
+        <div class="flex justify-center mb-4">
+            <div class="bg-green-600 text-white p-4 rounded-full">
+                <i data-feather="shopping-bag" class="w-6 h-6"></i>
+            </div>
+        </div>
+        <h4 class="text-xl font-bold text-gray-800 mb-2">OLX</h4>
+        <p class="text-gray-600 text-sm">Gestão e otimização de anúncios para gerar mais contatos.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 text-center">
+        <div class="flex justify-center mb-4">
+            <div class="bg-purple-600 text-white p-4 rounded-full">
+                <i data-feather="share-2" class="w-6 h-6"></i>
+            </div>
+        </div>
+        <h4 class="text-xl font-bold text-gray-800 mb-2">Redes Sociais</h4>
+        <p class="text-gray-600 text-sm">Campanhas no Instagram, Facebook e outras plataformas.</p>
+    </div>
+
+</div>
+
                         </div>
                     </div>
                     
-                    <!-- Formulário -->
-                    <div class="bg-white rounded-2xl shadow-xl p-8">
-                        <h3 class="text-2xl font-bold text-secondary mb-6">Solicite um Orçamento</h3>
-                    <form id="contactForm" class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-gray-700 font-medium mb-2">Nome Completo</label>
-                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200">
-                        </div>
-                        
-                        <div>
-                            <label for="email" class="block text-gray-700 font-medium mb-2">E-mail</label>
-                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200">
-                        </div>
-                        
-                        <div>
-                            <label for="phone" class="block text-gray-700 font-medium mb-2">Telefone</label>
-                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200">
-                        </div>
-                        
-                        <div>
-                            <label for="service" class="block text-gray-700 font-medium mb-2">Serviço de Interesse</label>
-                            <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200">
-                                <option value="">Selecione um serviço</option>
-                                <option value="banners">Banners e Faixas</option>
-                                <option value="fachadas">Fachadas e Letreiros</option>
-                                <option value="cartoes">Cartão de Visita</option>
-                                <option value="panfletos">Panfletos e Flyers</option>
-                                <option value="adesivos">Adesivos Personalizados</option>
-                                <option value="catalogos">Catálogos e Revistas</option>
-                                <option value="corporativo">Material Corporativo</option>
-                                <option value="digital">Impressão Digital</option>
-                            </select>
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem / Detalhes do Projeto</label>
-                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="w-full bg-primary hover:bg-blue-800 text-white font-semibold py-4 px-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                                Enviar Solicitação
-                            </button>
-                    </form>
-                    </div>
+                    <!-- Formulário WhatsApp -->
+<div class="bg-white rounded-2xl shadow-xl p-8">
+    <h3 class="text-2xl font-bold text-secondary mb-6">Solicite um Orçamento</h3>
+
+    <form id="form-whatsapp" class="space-y-6">
+        <div>
+            <label for="nome" class="block text-gray-700 font-medium mb-2">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200">
+        </div>
+
+        <div>
+            <label for="email" class="block text-gray-700 font-medium mb-2">E-mail</label>
+            <input type="email" id="email" name="email" required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200">
+        </div>
+
+        <div>
+            <label for="telefone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+            <input type="tel" id="telefone" name="telefone"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200">
+        </div>
+
+        <div>
+            <label for="servico" class="block text-gray-700 font-medium mb-2">Serviço de Interesse</label>
+            <select id="servico" name="servico"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200">
+                <option value="">Selecione um serviço</option>
+                <option value="Banners e Faixas">Banners e Faixas</option>
+                <option value="Fachadas e Letreiros">Fachadas e Letreiros</option>
+                <option value="Cartão de Visita">Cartão de Visita</option>
+                <option value="Panfletos e Flyers">Panfletos e Flyers</option>
+                <option value="Adesivos Personalizados">Adesivos Personalizados</option>
+                <option value="Catálogos e Revistas">Catálogos e Revistas</option>
+                <option value="Material Corporativo">Material Corporativo</option>
+                <option value="Impressão Digital">Impressão Digital</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="mensagem" class="block text-gray-700 font-medium mb-2">Mensagem / Detalhes do Projeto</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200"></textarea>
+        </div>
+
+        <button type="submit"
+            class="w-full bg-primary hover:bg-blue-800 text-white font-semibold py-4 px-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+            Enviar para WhatsApp
+        </button>
+    </form>
+</div>
+
+<script>
+document.getElementById("form-whatsapp").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const nome = document.getElementById("nome").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const telefone = document.getElementById("telefone").value.trim();
+    const servico = document.getElementById("servico").value;
+    const mensagem = document.getElementById("mensagem").value.trim();
+
+    const texto = `*Novo Pedido de Orçamento*%0A` +
+                  `👤 *Nome:* ${nome}%0A` +
+                  `📧 *Email:* ${email}%0A` +
+                  `📱 *Telefone:* ${telefone}%0A` +
+                  `🖨️ *Serviço:* ${servico}%0A` +
+                  `📝 *Mensagem:* ${mensagem}`;
+
+    const numeroWhatsApp = "5562985558320"; // Seu número
+    const url = `https://wa.me/${numeroWhatsApp}?text=${texto}`;
+
+    window.open(url, "_blank");
+    document.getElementById("form-whatsapp").reset();
+});
+</script>
+
                 </div>
             </div>
         </section>
