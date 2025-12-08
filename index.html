@@ -1,54 +1,365 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Rafael SS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChromaPrint Visuals - Gráfica em Cristalina GO | Serviços Gráficos Profissionais</title>
+    <meta name="description" content="Gráfica profissional em Cristalina GO, atuando também em Goiânia e Aparecida. Impressão de banners, fachadas, cartão de visita, panfletos, adesivos e mais. Solicite seu orçamento!">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af', // Azul sofisticado
+                        secondary: '#0f172a', // Cinza azulado escuro
+                        accent: '#dc2626'   // Vermelho coral para destaques
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body style="margin:0; font-family:sans-serif; line-height:1.6;">
+<body class="bg-gray-50 text-gray-800">
+    <custom-navbar></custom-navbar>
 
-  <!-- Cabeçalho -->
-  <header style="background:#222; color:#fff; text-align:center; padding:30px;">
-    <h1>👋 Eu sou Rafael Soares</h1>
-    <p>Desenvolvedor Web & Criador de Soluções</p>
-    <nav>
-      <a href="#sobre" style="color:#25D366; margin:0 10px; text-decoration:none;">Sobre</a>
-      <a href="#projetos" style="color:#25D366; margin:0 10px; text-decoration:none;">Projetos</a>
-      <a href="#contato" style="color:#25D366; margin:0 10px; text-decoration:none;">Contato</a>
-    </nav>
-  </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="http://static.photos/technology/1200x630/105" alt="Máquina de impressão gráfica moderna" class="w-full h-full object-cover brightness-50">
+                <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/80 mix-blend-multiply"></div>
+            </div>
+            <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">Impressão que <span class="text-accent">Transforma</span> Ideias</h1>
+                <p class="text-xl md:text-2xl text-gray-200 mb-10">Serviços gráficos de alta qualidade em Cristalina, Goiânia e Aparecida. Do design à entrega, criamos materiais que destacam sua marca.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="bg-accent hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition duration-300">Solicitar Orçamento</a>
+                    <a href="https://wa.me/5562985558320" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition duration-300 flex items-center justify-center gap-2">
+                        <i data-feather="message-circle"></i>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <i data-feather="chevron-down" class="text-white w-8 h-8"></i>
+            </div>
+        </section>
 
-  <!-- Sobre -->
-  <section id="sobre" style="padding:40px; text-align:center; background:#f4f4f4;">
-    <h2>🙋 Sobre Mim</h2>
-    <p>Apaixonado por tecnologia e desenvolvimento web. Busco criar experiências simples, funcionais e memoráveis.</p>
-    <p><strong>Habilidades:</strong> HTML • CSS • PHP • Construção Civil Digital</p>
-  </section>
+        <!-- Serviços Section -->
+        <section id="services" class="py-20 px-4 md:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Nossos Serviços Gráficos</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Oferecemos soluções completas para sua comunicação visual, com qualidade e agilidade.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 border-t-4 border-primary">
+                        <div class="text-primary mb-4">
+                            <i data-feather="flag" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Banners e Faixas</h3>
+                        <p class="text-gray-600">Banners de alta qualidade para eventos, promoções e comunicação externa. Impressão rápida e durável.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 border-t-4 border-accent">
+                        <div class="text-accent mb-4">
+                            <i data-feather="home" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Fachadas e Letreiros</h3>
+                        <p class="text-gray-600">Sinalização profissional para seu estabelecimento. Destaque sua marca com visibilidade e qualidade.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 border-t-4 border-primary">
+                        <div class="text-primary mb-4">
+                            <i data-feather="credit-card" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Cartão de Visita</h3>
+                        <p class="text-gray-600">Cartões personalizados que impressionam. Papéis especiais, acabamentos premium e designs exclusivos.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 border-t-4 border-accent">
+                        <div class="text-accent mb-4">
+                            <i data-feather="file-text" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Panfletos e Flyers</h3>
+                        <p class="text-gray-600">Material promocional eficaz para campanhas de marketing. Design atrativo e impressão em alta resolução.</p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 border-t-4 border-primary">
+                        <div class="text-primary mb-4">
+                            <i data-feather="tag" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Adesivos Personalizados</h3>
+                        <p class="text-gray-600">Adesivos para produtos, veículos, decoração e identificação. Adesivos de vinil de alta qualidade.</p>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 border-t-4 border-accent">
+                        <div class="text-accent mb-4">
+                            <i data-feather="book" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Catálogos e Revistas</h3>
+                        <p class="text-gray-600">Publicações comerciais e editoriais com acabamento profissional. Encadernação de qualidade superior.</p>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 border-t-4 border-primary">
+                        <div class="text-primary mb-4">
+                            <i data-feather="briefcase" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Material Corporativo</h3>
+                        <p class="text-gray-600">Pastas, crachás, agendas e toda linha de material para empresas. Branding consistente e profissional.</p>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition duration-300 border-t-4 border-accent">
+                        <div class="text-accent mb-4">
+                            <i data-feather="printer" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-3">Impressão Digital</h3>
+                        <p class="text-gray-600">Tecnologia de ponta para impressão rápida e de alta qualidade. Pequenas e grandes tiragens.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Projetos -->
-  <section id="projetos" style="padding:40px; text-align:center;">
-    <h2>🚀 Projetos</h2>
-    <p><strong>🌟 Site Pessoal:</strong> Experiência clara para usuários, com foco em <em>construção civil, reformas e ampliação</em>.</p>
-    <p><strong>🌟 Projeto 2:</strong> Solução prática para clientes, conectando inovação e resultado.</p>
-  </section>
+        <!-- Portfolio Gallery -->
+        <section id="portfolio" class="py-20 bg-secondary text-white">
+            <div class="max-w-7xl mx-auto px-4 md:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Nossos Trabalhos</h2>
+                    <p class="text-gray-300 max-w-2xl mx-auto">Confira alguns exemplos de nossos projetos gráficos realizados para clientes em Cristalina, Goiânia e região.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+                        <img src="http://static.photos/workspace/640x360/101" alt="Banner empresarial impresso" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+                            <p class="font-semibold">Banner Corporativo</p>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+                        <img src="http://static.photos/retail/640x360/102" alt="Cartão de visita premium" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+                            <p class="font-semibold">Cartões de Visita</p>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+                        <img src="http://static.photos/cityscape/640x360/103" alt="Fachada comercial com letreiro" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+                            <p class="font-semibold">Letreiro de Fachada</p>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+                        <img src="http://static.photos/abstract/640x360/104" alt="Panfletos coloridos" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+                            <p class="font-semibold">Campanha Promocional</p>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+                        <img src="http://static.photos/automotive/640x360/105" alt="Adesivo para veículo" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+                            <p class="font-semibold">Adesivo Veicular</p>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+                        <img src="http://static.photos/white/640x360/106" alt="Catálogo empresarial" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+                            <p class="font-semibold">Catálogo Empresarial</p>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+                        <img src="http://static.photos/education/640x360/107" alt="Material corporativo" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+                            <p class="font-semibold">Material Corporativo</p>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg group cursor-pointer">
+                        <img src="http://static.photos/technology/640x360/108" alt="Impressão digital" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+                            <p class="font-semibold">Impressão Digital</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Contato (WhatsApp) -->
-  <section id="contato" style="padding:40px; text-align:center; background:#f4f4f4;">
-    <h2>📩 Fale Comigo</h2>
-    <form onsubmit="this.action='https://wa.me/5562985558320?text=Olá,%20sou%20'+this.nome.value+'%20(%20'+this.email.value+'%20)%20.%20Data:%20'+this.data.value+'%20Mensagem:%20'+this.mensagem.value; return true;" method="get" style="max-width:400px;margin:auto;text-align:left;">
-      
-      <input type="text" name="nome" placeholder="Seu nome" style="width:100%;padding:10px;margin:8px 0;">
-      <input type="email" name="email" placeholder="Seu e-mail" style="width:100%;padding:10px;margin:8px 0;">
-      <input type="date" name="data" style="width:100%;padding:10px;margin:8px 0;">
-      <textarea name="mensagem" placeholder="Sua mensagem" style="width:100%;padding:10px;margin:8px 0;"></textarea>
-      <input type="submit" value="Enviar no WhatsApp" style="width:100%;background:#25D366;color:#fff;border:none;padding:12px;cursor:pointer;border-radius:5px;">
-    </form>
-  </section>
+        <!-- Sobre Section -->
+        <section id="about" class="py-20 px-4 md:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <img src="http://static.photos/workspace/1024x576/109" alt="Nossa equipe e espaço de trabalho" class="rounded-2xl shadow-2xl">
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">Sobre a ChromaPrint Visuals</h2>
+                        <p class="text-gray-600 mb-6">Somos uma gráfica profissional sediada em Cristalina/GO, com atuação também em Goiânia e Aparecida. Especializados em comunicação visual, transformamos ideias em materiais gráficos de alto impacto.</p>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-primary mb-4">Nossa Missão</h3>
+                            <p class="text-gray-600">Proporcionar soluções gráficas inovadoras e de qualidade, contribuindo para o sucesso visual de nossos clientes em todo o estado de Goiás.</p>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <h3 class="text-xl font-bold text-accent mb-4">Nossos Valores</h3>
+                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <li class="flex items-center gap-2 text-gray-700">
+                                <i data-feather="check-circle" class="w-5 h-5 text-green-500"></i>
+                                Qualidade superior
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-700">
+                                <i data-feather="check-circle" class="w-5 h-5 text-green-500"></i>
+                                Atendimento personalizado
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-700">
+                                <i data-feather="check-circle" class="w-5 h-5 text-green-500"></i>
+                                Entrega pontual
+                                </li>
+                                <li class="flex items-center gap-2 text-gray-700">
+                                <i data-feather="check-circle" class="w-5 h-5 text-green-500"></i>
+                                Preço justo
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-secondary mb-4">Área de Atendimento</h3>
+                            <div class="flex flex-wrap gap-4">
+                                <span class="bg-primary text-white px-4 py-2 rounded-full font-medium">Cristalina GO</span>
+                            <span class="bg-accent text-white px-4 py-2 rounded-full font-medium">Goiânia GO</span>
+                            <span class="bg-secondary text-white px-4 py-2 rounded-full font-medium">Aparecida de Goiânia GO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Rodapé -->
-  <footer style="background:#222; color:#fff; text-align:center; padding:20px;">
-    © 2025 - Criado por Rafael SS
-  </footer>
+        <!-- Contato Section -->
+        <section id="contact" class="py-20 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 md:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Entre em Contato</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Solicite um orçamento sem compromisso para serviços gráficos em Cristalina, Goiânia ou Aparecida.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Informações de contato -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-secondary mb-8">Fale Conosco</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-primary text-white p-3 rounded-full">
+                                    <i data-feather="phone" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Telefone / WhatsApp</h4>
+                                    <p class="text-gray-600">(62) 98555-8320</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="bg-accent text-white p-3 rounded-full">
+                                    <i data-feather="map-pin" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Atendemos em</h4>
+                                    <p class="text-gray-600">Cristalina GO • Goiânia GO • Aparecida de Goiânia GO</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="bg-secondary text-white p-3 rounded-full">
+                                    <i data-feather="clock" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Horário de Atendimento</h4>
+                                    <p class="text-gray-600">Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-8">
+                                <a href="https://wa.me/5562985558320" target="_blank" class="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-6 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition duration-300">
+                                    <i data-feather="message-circle" class="w-6 h-6"></i>
+                                    Iniciar conversa no WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulário -->
+                    <div class="bg-white rounded-2xl shadow-xl p-8">
+                        <h3 class="text-2xl font-bold text-secondary mb-6">Solicite um Orçamento</h3>
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nome Completo</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">E-mail</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Serviço de Interesse</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200">
+                                <option value="">Selecione um serviço</option>
+                                <option value="banners">Banners e Faixas</option>
+                                <option value="fachadas">Fachadas e Letreiros</option>
+                                <option value="cartoes">Cartão de Visita</option>
+                                <option value="panfletos">Panfletos e Flyers</option>
+                                <option value="adesivos">Adesivos Personalizados</option>
+                                <option value="catalogos">Catálogos e Revistas</option>
+                                <option value="corporativo">Material Corporativo</option>
+                                <option value="digital">Impressão Digital</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem / Detalhes do Projeto</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary hover:bg-blue-800 text-white font-semibold py-4 px-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                                Enviar Solicitação
+                            </button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
